@@ -4,9 +4,8 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+
+import Logo from '../../Assets/logo.png';
 
 const styles = {
     root: {
@@ -15,11 +14,13 @@ const styles = {
     grow: {
         flexGrow: 1,
         borderBottom: '1px solid darkgray',
+        paddingBottom: '2%',
+        marginTop: '2%',
     },
     bg: {
-        backgroundColor: 'rgb(27, 23, 23)',
+        backgroundColor: 'gray',
         marginTop: '3.3%',
-        height: '15%',
+        height: '22%',
         paddingRight: '12%',
         paddingLeft: '10%',
     },
@@ -31,14 +32,17 @@ function ButtonAppBar(props) {
         <div className={classes.root}>
             <AppBar style={styles.bg}>
                 <Toolbar >
-                    <Typography variant="h6" color="inherit" className={classes.grow}>
-                        Logo
-          </Typography>
+                    <Typography color="inherit" className={classes.grow}>
+                        <img src={Logo} style={{ width: 150, height: 50 }} />
+                    </Typography>
                 </Toolbar>
+                <div style={{ paddingLeft: '1%', marginTop: 15 }}>
+                    <a href="#" className="navLink">Home</a>
+                    <a href="#" className="navLink">Shop</a>
+                    <a href="#" className="navLink">Blog</a>
+                    <a href="#" className="navLink">Contact</a>
+                </div>
             </AppBar>
-
-
-
         </div>
     );
 }

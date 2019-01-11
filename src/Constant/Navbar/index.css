@@ -1,5 +1,37 @@
-/* account hover */
+.root {
+      flex-grow: 1,
+}
+.mailIcon {
+      padding-left: 10%;
+      margin-right: .3%;
+      cursor: pointer;
+    }
+    .mail{
+      display: inline
+    }
+    .searchBar {
+      background-color: black;
+      color: white;
+      border: black;
+      height: 10;
+    }
+
+    .searchIcon {
+      margin-left: .4%; 
+      cursor: pointer;
+    }
 
 .account:hover{
     color: #ff6023;
+}
+
+.navLink {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 15px;
+  color: aliceblue;
+}
+
+.navLink:hover {
+  color: #ff6023
 }
